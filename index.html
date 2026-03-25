@@ -4,112 +4,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nguyen Thi Huong - HR Executive</title>
-
-<style>
-body{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto;
-    margin:0;
-    background:#f6f8fb;
-    color:#333;
-}
-
-.container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:40px;
-}
-
-header{
-    border-bottom:2px solid #eee;
-    padding-bottom:20px;
-}
-
-h1{
-    margin:0;
-    font-size:34px;
-}
-
-.title{
-    color:#666;
-    font-size:18px;
-}
-
-.contact{
-    margin-top:10px;
-    font-size:14px;
-    color:#555;
-}
-
-section{
-    margin-top:35px;
-}
-
-h2{
-    border-left:4px solid #4f46e5;
-    padding-left:10px;
-    font-size:20px;
-}
-
-.job{
-    margin-top:20px;
-}
-
-.job-title{
-    font-weight:bold;
-}
-
-.company{
-    color:#555;
-}
-
-.date{
-    color:#888;
-    font-size:14px;
-}
-
-ul{
-    margin-top:8px;
-}
-
-.skills{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:8px;
-}
-
-.footer{
-    text-align:center;
-    margin-top:40px;
-    color:#888;
-    font-size:13px;
-}
-</style>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="m-0 bg-slate-50 font-sans text-[#333]">
 
-<div class="container">
+<div class="mx-auto max-w-[900px] bg-white px-5 py-8 shadow-sm sm:px-8 sm:py-10 lg:px-10">
 
-<header>
-<h1>NGUYEN THI HUONG</h1>
-<div class="title">HUMAN RESOURCE EXECUTIVE</div>
+<header class="border-b-2 border-[#eee] pb-5">
+<h1 class="m-0 text-3xl font-bold tracking-wide sm:text-[34px]">NGUYEN THI HUONG</h1>
+<div class="text-base text-[#666] sm:text-lg">HUMAN RESOURCE EXECUTIVE</div>
 
-<div class="contact">
-+84 928 938 032  |  huong.nguyen2558@gmail.com  |  Tan Binh, HCMC  |  linkedin.com/in/huongnguyen552
+<div class="mt-3 flex flex-col gap-1 text-sm leading-6 text-[#555] sm:flex-row sm:flex-wrap sm:gap-x-2 sm:gap-y-1">
+<span>+84 928 938 032</span>
+<span class="hidden sm:inline">|</span>
+<span class="break-all sm:break-normal">huong.nguyen2558@gmail.com</span>
+<span class="hidden sm:inline">|</span>
+<span>Tan Binh, HCMC</span>
+<span class="hidden sm:inline">|</span>
+<span class="break-all sm:break-normal">linkedin.com/in/huongnguyen552</span>
 </div>
 </header>
 
-<section>
-<h2>Professional Summary</h2>
-<p>
+<section class="mt-8 sm:mt-[35px]">
+<h2 class="border-l-4 border-indigo-600 pl-3 text-xl font-semibold">Professional Summary</h2>
+<p class="mt-3 leading-7 text-[15px] sm:text-base">
 Detail-oriented HR professional with 1.5+ years of experience in documentation compliance, visa/immigration processing, and HR administration across 4 organizations. Proven track record managing 80+ visa and permit applications with strict regulatory compliance across multiple international markets. Solid academic foundation in Vietnamese labor law and social insurance regulations (Bachelor’s in Labor Relations, GPA 3.12/4.0). Skilled in HRIS platforms (Odoo, Base.vn), employee records management, and cross-functional coordination. Eager to leverage transferable compliance and administrative expertise in a full-scope HR operations role.
 </p>
 </section>
 
-<section>
-<h2>Key Skills</h2>
-<div class="skills">
+<section class="mt-8 sm:mt-[35px]">
+<h2 class="border-l-4 border-indigo-600 pl-3 text-xl font-semibold">Key Skills</h2>
+<div class="mt-3 grid grid-cols-1 gap-2 text-[15px] leading-7 sm:grid-cols-2 sm:text-base">
 <div>• <b>HR Operations:</b> onboarding/offboarding, employee records, personnel filing</div>
 <div>• <b>Immigration Compliance:</b> WP, visa processing, document management</div>
 <div>• <b>Labor Compliance:</b> Vietnamese Labor Law, Social Insurance (BHXH/BHYT/BHTN)</div>
@@ -121,14 +47,14 @@ Detail-oriented HR professional with 1.5+ years of experience in documentation c
 </div>
 </section>
 
-<section>
-<h2>Work Experience</h2>
+<section class="mt-8 sm:mt-[35px]">
+<h2 class="border-l-4 border-indigo-600 pl-3 text-xl font-semibold">Work Experience</h2>
 
-<div class="job">
-<div class="job-title">Admissions & HR Compliance Officer</div>
-<div class="company">Edunetwork Vietnam</div>
-<div class="date">05/2025 – Present</div>
-<ul>
+<div class="mt-5">
+<div class="font-bold">Admissions &amp; HR Compliance Officer</div>
+<div class="text-[#555]">Edunetwork Vietnam</div>
+<div class="text-sm text-[#888]">05/2025 – Present</div>
+<ul class="mt-2 list-disc pl-5 leading-7 text-[15px] sm:text-base">
 <li>Process and manage visa and permit applications for international markets including Australia, Canada, the United States, and New Zealand, ensuring strict compliance with immigration regulations</li>
 <li>Manage end-to-end client onboarding: document collection, system registration, profile setup, and orientation coordination — handling 8–10 new cases monthly</li>
 <li>Maintain accurate and up-to-date records for 50+ active client files across multiple regulated systems (CRM, embassy portals), ensuring data integrity and audit readiness</li>
@@ -137,30 +63,30 @@ Detail-oriented HR professional with 1.5+ years of experience in documentation c
 <li>Coordinate with government agencies and consulates for document submission, status tracking, and issue resolution</li>
 <li>Compile and submit monthly application status reports to management, tracking KPIs and compliance metrics</li>
 <li>Arrange travel logistics including flight bookings, accommodation, and appointment scheduling</li>
-<li style="list-style: none;">★ <b>Key achievement:</b> Consistently achieved monthly KPIs of 8–10 student and visitor visa applications over six consecutive months</li>
+<li class="list-none pl-0">★ <b>Key achievement:</b> Consistently achieved monthly KPIs of 8–10 student and visitor visa applications over six consecutive months</li>
 </ul>
 </div>
 
-<div class="job">
-<div class="job-title">Admissions & Documentation Compliance Officer</div>
-<div class="company">Instulink International Co., Ltd</div>
-<div class="date">09/2024 – 04/2025</div>
-<ul>
+<div class="mt-5">
+<div class="font-bold">Admissions &amp; Documentation Compliance Officer</div>
+<div class="text-[#555]">Instulink International Co., Ltd</div>
+<div class="text-sm text-[#888]">09/2024 – 04/2025</div>
+<ul class="mt-2 list-disc pl-5 leading-7 text-[15px] sm:text-base">
 <li>Processed offer letters and managed documentation for student visas, study permits, work permits, and visitor visas across Australia, Canada, and the United States</li>
 <li>Developed tailored study roadmaps, checklists, and compliance documentation based on individual client needs and regulatory requirements</li>
 <li>Completed visa application forms and drafted essential compliance documents (GS, SOPs, Invitation Letters) for Australia and Canada markets</li>
 <li>Managed study abroad documentation pipeline: screening, classification, organization, and final preparation for government submission</li>
 <li>Coordinated directly with clients and partners via office meetings, email, and messaging platforms</li>
 <li>Established systematic filing procedures for both physical and digital documents, enabling quick retrieval during audits</li>
-<li style="list-style: none;">★ <b>Key achievement:</b> Successfully achieved monthly KPIs of 8–10 applications over six consecutive months</li>
+<li class="list-none pl-0">★ <b>Key achievement:</b> Successfully achieved monthly KPIs of 8–10 applications over six consecutive months</li>
 </ul>
 </div>
 
-<div class="job">
-<div class="job-title">HR Administrative Intern</div>
-<div class="company">Kingsport (Indochina Development Export Import Co., Ltd)</div>
-<div class="date">02/2024 – 05/2024</div>
-<ul>
+<div class="mt-5">
+<div class="font-bold">HR Administrative Intern</div>
+<div class="text-[#555]">Kingsport (Indochina Development Export Import Co., Ltd)</div>
+<div class="text-sm text-[#888]">02/2024 – 05/2024</div>
+<ul class="mt-2 list-disc pl-5 leading-7 text-[15px] sm:text-base">
 <li>Supported onboarding documentation for new hires including preparing employment contracts, collecting personal documents, and setting up employee profiles</li>
 <li>Handled end-to-end recruitment process for 4 Technical Interns within 2 months, from sourcing to offer letter</li>
 <li>Assisted HR team with attendance data compilation, leave record maintenance, and monthly payroll data preparation</li>
@@ -171,50 +97,50 @@ Detail-oriented HR professional with 1.5+ years of experience in documentation c
 </ul>
 </div>
 
-<div class="job">
-<div class="job-title">Sales & HR Administration Support</div>
-<div class="company">ELSA Co., Ltd. (ELSA Speak)</div>
-<div class="date">09/2021 – 12/2023</div>
-<ul>
+<div class="mt-5">
+<div class="font-bold">Sales &amp; HR Administration Support</div>
+<div class="text-[#555]">ELSA Co., Ltd. (ELSA Speak)</div>
+<div class="text-sm text-[#888]">09/2021 – 12/2023</div>
+<ul class="mt-2 list-disc pl-5 leading-7 text-[15px] sm:text-base">
 <li>Managed and maintained customer database on CRM systems, ensuring data accuracy and timely updates for 500+ records</li>
 <li>Supported payroll-related processes including commission data preparation for the sales team and coordination with the accounting department</li>
 <li>Tracked team attendance and leave records to support monthly payroll consolidation</li>
 <li>Handled VAT invoice issuance, refund proposals, and customer service inquiries via hotline, email, and messaging</li>
 <li>Coordinated with cross-functional departments (Sales, Accounting, Operations) to perform related tasks</li>
 <li>Contributed to internal team engagement initiatives including onboarding buddy programs for new interns</li>
-<li style="list-style: none;">★ <b>Key achievement:</b> Successfully recruited 3 Telesales (passed probation), 1 Intern for Thai market, 1 Intern for Indonesia market</li>
+<li class="list-none pl-0">★ <b>Key achievement:</b> Successfully recruited 3 Telesales (passed probation), 1 Intern for Thai market, 1 Intern for Indonesia market</li>
 </ul>
 </div>
 
 </section>
 
-<section>
-<h2>Education</h2>
-<p>
+<section class="mt-8 sm:mt-[35px]">
+<h2 class="border-l-4 border-indigo-600 pl-3 text-xl font-semibold">Education</h2>
+<p class="mt-3 leading-7 text-[15px] sm:text-base">
 <b>Ton Duc Thang University</b> (10/2020 – 09/2024)<br>
 Bachelor’s Degree in Labor Relations | GPA: 3.12 / 4.0<br>
 <i>Relevant coursework: Vietnamese Labor Law, Social Insurance & Benefits Administration, Employment Relations, HR Management</i>
 </p>
 </section>
 
-<section>
-<h2>Certificates</h2>
-<ul>
+<section class="mt-8 sm:mt-[35px]">
+<h2 class="border-l-4 border-indigo-600 pl-3 text-xl font-semibold">Certificates</h2>
+<ul class="mt-3 list-disc pl-5 leading-7 text-[15px] sm:text-base">
 <li>MOS Word & Excel – IIG Vietnam</li>
 <li>Aptis ESOL General English Certificate (Level B2) – British Council</li>
 </ul>
 </section>
 
-<section>
-<h2>Additional Information</h2>
-<ul>
+<section class="mt-8 sm:mt-[35px]">
+<h2 class="border-l-4 border-indigo-600 pl-3 text-xl font-semibold">Additional Information</h2>
+<ul class="mt-3 list-disc pl-5 leading-7 text-[15px] sm:text-base">
 <li><b>Languages:</b> Vietnamese (Native), English (B2 – Professional working proficiency)</li>
 <li><b>Systems:</b> Odoo ERP (HR modules), Base.vn (HR management platform), CRM platforms, Embassy/Consulate portals</li>
 <li><b>Interests:</b> Continuous learning in HR compliance and labor law updates</li>
 </ul>
 </section>
 
-<div class="footer">
+<div class="mt-10 text-center text-[13px] text-[#888]">
 © 2026 Nguyen Thi Huong
 </div>
 
